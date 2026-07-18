@@ -8,22 +8,28 @@ elements.ItemAdd({
 	config: {},
 	render: function()
 	{
+		if(onetype.iframe)
+		{
+			return `
+				<div class="blocked">
+					<div class="ot-container-s">
+						<e-status-error
+							icon="web_asset_off"
+							title="Forge is not available inside a preview"
+							description="This screen loads the instance in an iframe, so opening it from inside one would nest forever. Open Forge in the top level window instead."
+							action=""
+						></e-status-error>
+					</div>
+				</div>
+			`;
+		}
+
 		return `
 			<div class="box">
 				<div class="chat">
-					<div class="empty">
-						<div class="mark"><i>construction</i></div>
-						<span class="lead">Forge is not wired up yet.</span>
-						<span class="hint">Orah-Forge and the development team will chat here.</span>
-					</div>
+					<e-orah-chat background="1"></e-orah-chat>
 				</div>
-				<div class="preview">
-					<div class="empty">
-						<div class="mark"><i>web</i></div>
-						<span class="lead">No instance connected.</span>
-						<span class="hint">The live remote instance will render here.</span>
-					</div>
-				</div>
+				<e-forge-preview></e-forge-preview>
 			</div>
 		`;
 	}

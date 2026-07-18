@@ -1,0 +1,128 @@
+/* ===== FORGE PREVIEW ===== */
+
+.e-7a1db10c
+{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 40px 0 40px 40px;
+}
+
+.e-7a1db10c > .box
+{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: var(--ot-bg-2);
+	border: 1px solid var(--ot-bg-2-border);
+	border-right: none;
+	border-radius: var(--ot-radius-l) 0 0 var(--ot-radius-l);
+}
+
+/* Bar */
+
+.e-7a1db10c > .box > .bar
+{
+	display: flex;
+	align-items: center;
+	gap: var(--ot-spacing-s);
+	padding: var(--ot-spacing-s) var(--ot-spacing-m);
+	background: var(--ot-bg-2);
+	border-bottom: 1px solid var(--ot-bg-2-border);
+	border-radius: var(--ot-radius-l) 0 0 0;
+}
+
+.e-7a1db10c > .box > .bar > .dot
+{
+	flex-shrink: 0;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: var(--ot-text-3);
+	transition: background var(--ot-transition-fast);
+}
+
+.e-7a1db10c > .box > .bar > .dot.ready
+{
+	background: var(--ot-green);
+}
+
+.e-7a1db10c > .box > .bar > .dot.busy
+{
+	background: var(--ot-orange);
+	animation: e-7a1db10c-pulse 1.2s infinite;
+}
+
+@keyframes e-7a1db10c-pulse
+{
+	0%, 100% { opacity: 0.4; }
+	50% { opacity: 1; }
+}
+
+.e-7a1db10c > .box > .bar > .address
+{
+	flex: 1;
+	height: var(--ot-height-s);
+	padding: 0 var(--ot-spacing-s);
+	background: var(--ot-bg-3);
+	border: 1px solid var(--ot-bg-3-border);
+	border-radius: var(--ot-radius-s);
+	color: var(--ot-text-1);
+	font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+	font-size: var(--ot-size-s);
+	transition: border-color var(--ot-transition-fast);
+}
+
+.e-7a1db10c > .box > .bar > .address:focus
+{
+	border-color: var(--ot-bg-3-border);
+	outline: none;
+}
+
+.e-7a1db10c > .box > .bar > .address::placeholder
+{
+	color: var(--ot-text-3);
+}
+
+.e-7a1db10c > .box > .bar > .action
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 26px;
+	height: 26px;
+	border-radius: var(--ot-radius-s);
+	color: var(--ot-text-3);
+	transition: color var(--ot-transition-fast), background var(--ot-transition-fast);
+}
+
+.e-7a1db10c > .box > .bar > .action:hover
+{
+	background: var(--ot-bg-3);
+	color: var(--ot-text-1);
+}
+
+.e-7a1db10c > .box > .bar > .action > i
+{
+	font-size: 16px;
+}
+
+/* Frame */
+
+.e-7a1db10c > .box > .frame
+{
+	flex: 1;
+	position: relative;
+}
+
+.e-7a1db10c > .box > .frame > iframe
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: none;
+	background: #fff;
+}
