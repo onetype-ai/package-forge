@@ -1,0 +1,19 @@
+{
+	"type": "package",
+	"slug": "onetype/forge",
+	"name": "Forge",
+	"version": "0.1.0",
+	"description": "The remote development workbench for OneType instances. Chat with a development team of agents that edit a package live on your machine while you watch the real instance update in an iframe.",
+	"icon": "construction",
+	"color": "rgba(251, 146, 60, 1)",
+	"core": ">=0.1.0",
+	"status": "enabled",
+	"depends": [
+		"onetype/agents",
+		"onetype/orah"
+	],
+	"permissions": [],
+	"limits": {},
+	"features": {},
+	"config": {}
+}
