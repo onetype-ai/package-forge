@@ -1,0 +1,140 @@
+/* ===== FORGE PACKAGES ===== */
+
+.e-42463029
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.e-42463029 > .box
+{
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+}
+
+.e-42463029 > .box > .ot-container-m
+{
+	display: flex;
+	flex-direction: column;
+	gap: var(--ot-spacing-l);
+	padding: var(--ot-spacing-l);
+}
+
+/* Form */
+
+.e-42463029 .form
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1.5fr auto;
+	gap: var(--ot-spacing-s);
+}
+
+/* List */
+
+.e-42463029 .list
+{
+	display: flex;
+	flex-direction: column;
+	background: var(--ot-bg-1);
+	border: 1px solid var(--ot-bg-1-border);
+	border-radius: var(--ot-radius-m);
+	overflow: hidden;
+}
+
+.e-42463029 .list > .row
+{
+	display: flex;
+	align-items: center;
+	gap: var(--ot-spacing-s);
+	padding: var(--ot-spacing-s) var(--ot-spacing-m);
+	cursor: pointer;
+	transition: background var(--ot-transition-fast);
+}
+
+.e-42463029 .list > .row:hover
+{
+	background: var(--ot-bg-2);
+}
+
+.e-42463029 .list > .row + .row
+{
+	border-top: 1px solid var(--ot-bg-1-border);
+}
+
+.e-42463029 .list > .row > .tile
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 32px;
+	height: 32px;
+	background: var(--ot-bg-2);
+	border-radius: var(--ot-radius-s);
+	color: var(--ot-text-2);
+}
+
+.e-42463029 .list > .row > .tile > i
+{
+	font-size: 16px;
+}
+
+.e-42463029 .list > .row > .text
+{
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	gap: 1px;
+	min-width: 0;
+}
+
+.e-42463029 .list > .row > .text > .name
+{
+	overflow: hidden;
+	color: var(--ot-text-1);
+	font-size: var(--ot-size-m);
+	font-weight: 500;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.e-42463029 .list > .row > .text > .hint
+{
+	overflow: hidden;
+	color: var(--ot-text-3);
+	font-size: var(--ot-size-s);
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.e-42463029 .list > .row > .remove
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 28px;
+	height: 28px;
+	border-radius: var(--ot-radius-s);
+	color: var(--ot-text-3);
+	opacity: 0;
+	transition: opacity var(--ot-transition-fast), color var(--ot-transition-fast), background var(--ot-transition-fast);
+}
+
+.e-42463029 .list > .row:hover > .remove
+{
+	opacity: 1;
+}
+
+.e-42463029 .list > .row > .remove:hover
+{
+	background: var(--ot-red-opacity);
+	color: var(--ot-red);
+}
+
+.e-42463029 .list > .row > .remove > i
+{
+	font-size: 16px;
+}

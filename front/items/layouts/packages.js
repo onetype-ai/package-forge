@@ -1,14 +1,14 @@
 onetype.AddonReady('ui.layouts', (layouts) =>
 {
 	layouts.Item({
-		id: 'forge-workbench',
+		id: 'forge-packages',
 		isActive: true,
-		screen: ['forge.package'],
+		screen: ['forge'],
 		zone: 'root',
 		slot: 'center',
 		render: function()
 		{
-			return `<e-forge-workbench :id="forgePackage"></e-forge-workbench>`;
+			return `<e-forge-packages></e-forge-packages>`;
 		}
 	});
 });
