@@ -5,7 +5,12 @@ elements.ItemAdd({
 	description: 'The Forge screen: Orah-Forge chat on the left, the live remote instance in an iframe on the right.',
 	category: 'Forge',
 	metadata: { addon: 'forge' },
-	config: {},
+	config: {
+		id: {
+			type: 'string',
+			description: 'Id of the package being developed in this workbench.'
+		}
+	},
 	render: function()
 	{
 		if(onetype.iframe)
@@ -27,7 +32,7 @@ elements.ItemAdd({
 		return `
 			<div class="box">
 				<div class="chat">
-					<e-orah-chat background="1"></e-orah-chat>
+					<e-orah-chat background="1" agent="forge" name="Forge"></e-orah-chat>
 				</div>
 				<e-forge-preview></e-forge-preview>
 			</div>
