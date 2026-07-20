@@ -10,7 +10,9 @@
 	"depends": [
 		"onetype/vault",
 		"onetype/agents",
-		"onetype/orah"
+		"onetype/orah",
+		"onetype/elements",
+		"onetype/admin"
 	],
 	"runtimes": [
 		"admin"
