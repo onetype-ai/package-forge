@@ -13,6 +13,9 @@
 		"onetype/agents",
 		"onetype/orah"
 	],
+	"runtimes": [
+		"admin"
+	],
 	"permissions": [],
 	"limits": {},
 	"features": {},
