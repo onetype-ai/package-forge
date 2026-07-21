@@ -1,7 +1,7 @@
 import '#forge/addons/packages/addon.js';
 
 /* Core */
-import '#forge/addons/packages/core/schemas/package.js';
+import '#forge/addons/packages/_/schemas/package.js';
 
 /* Functions */
 import '#forge/addons/packages/functions/slug.js';
