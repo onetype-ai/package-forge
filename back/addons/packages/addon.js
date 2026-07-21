@@ -1,5 +1,3 @@
-import onetype from '@onetype/framework';
-
 onetype.AddonReady('forge', (forge) =>
 {
 	forge.packages = onetype.Addon('forge.packages', (addon) =>

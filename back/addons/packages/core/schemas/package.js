@@ -1,6 +1,4 @@
-import onetype from '@onetype/framework';
-
-onetype.DataSchema('forge.package', {
+onetype.SchemasRegister('forge.package', {
 	id: {
 		type: 'string',
 		description: 'Package id.'
