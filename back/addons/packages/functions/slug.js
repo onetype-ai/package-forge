@@ -5,5 +5,5 @@ import forge from '#forge/addon.js';
 
 forge.packages.Fn('slug', function(slug)
 {
-	return /^[a-zA-Z0-9]+$/.test(slug || '');
+    return /^[a-zA-Z0-9]+$/.test(slug || '');
 });

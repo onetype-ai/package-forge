@@ -1,12 +1,8 @@
 import '#forge/addons/packages/addon.js';
+import '#forge/addons/packages/items/onetype-schemas/forge.package.js';
 
-/* Core */
-import '#forge/addons/packages/_/schemas/package.js';
-
-/* Functions */
 import '#forge/addons/packages/functions/slug.js';
 
-/* Items */
 import '#forge/addons/packages/items/commands/crud/create.js';
 import '#forge/addons/packages/items/commands/crud/many.js';
 import '#forge/addons/packages/items/commands/crud/delete.js';
